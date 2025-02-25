@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 export default function Home() {
   return (
     <>
-      <header className="bg-slate-900 w-full h-16 flex items-center justify-center text-white text-lg font-normal shadow-lg">
+      <header className="bg-slate-900 w-full h-16 flex items-center justify-center text-white font-normal shadow-lg">
         PRVA KLUPA GANG - &quot;Bolji pogled, bolji mozak!&quot;
       </header>
       <main className="min-h-screen py-12 pt-24 bg-gradient-to-b from-gray-800 to-gray-900 text-white flex flex-col items-center">
@@ -43,17 +43,17 @@ export default function Home() {
           </ul>
         </section>
       </main>
-      <footer className="bg-slate-950 w-full h-20 flex items-center justify-center text-gray-400 text-sm">
+      <footer className="bg-slate-950 w-full h-20 items-center justify-center text-gray-400 text-sm flex md:flex-row flex-col-reverse text-center">
         <p>
           &copy; 2024 - {new Date().getFullYear()} Prva Klupa Gang. Sva prava
           pridržana (osim zadnjoj klupi).
         </p>
-        <span className="mx-3">|</span>
+        <span className="mx-3 hidden md:block">|</span>
         <a
           href="https://github.com/Domza64/Prva-Klupa-Gang"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center text-gray-400 hover:text-white"
+          className="flex items-center text-gray-400 hover:text-white py-4"
         >
           <FaGithub className="mr-2" /> GitHub Repo
         </a>
