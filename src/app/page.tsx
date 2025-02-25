@@ -23,7 +23,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-gray-800 p-6 rounded-lg shadow-lg max-w-2xl mb-10">
+        <section className="bg-gray-800 p-4 rounded-lg shadow-lg max-w-2xl mb-10">
           <h2 className="text-3xl font-bold mb-4">Glasaj ili pati!</h2>
           <p className="text-gray-300">
             Podrži revoluciju! Hoćeš sjediti u tami zadnje klupe ili uzdići se

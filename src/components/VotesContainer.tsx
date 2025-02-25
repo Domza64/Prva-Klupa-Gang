@@ -52,16 +52,18 @@ export default function VotesContainer() {
         <h3 className="text-xl font-bold mb-3">Omjer glasova</h3>
         <div className="flex h-12 w-full">
           <div
-            className="bg-blue-500 text-center text-white flex items-center justify-center"
+            className="bg-blue-500 text-center text-white flex items-center gap-1 justify-center"
             style={{ flex: trueRatio }}
           >
-            {trueRatio.toFixed(1)}%
+            <span>{trueRatio.toFixed(1)}%</span>
+            <span className="font-bold">{"(" + trueVotes.length + ")"}</span>
           </div>
           <div
-            className="bg-red-500 text-center text-white flex items-center justify-center"
+            className="bg-red-500 text-center text-white flex items-center gap-1 justify-center"
             style={{ flex: falseRatio }}
           >
-            {falseRatio.toFixed(1)}%
+            <span>{falseRatio.toFixed(1)}%</span>
+            <span className="font-bold">{"(" + falseVotes.length + ")"}</span>
           </div>
         </div>
       </div>
