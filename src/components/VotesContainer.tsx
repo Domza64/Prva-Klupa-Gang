@@ -94,15 +94,14 @@ export default function VotesContainer() {
       </div>
 
       <div className="text-center">
-        {trueVotes.length > 10 ||
-          (falseVotes.length > 10 && (
-            <button
-              className="underline text-white font-medium py-2 px-4 rounded-lg transition duration-300 shadow-lg"
-              onClick={() => setShowAllVotes(!showAllVotes)}
-            >
-              {showAllVotes ? "Prikaži manje" : "Prikaži sve glasove"}
-            </button>
-          ))}
+        {(trueVotes.length > 10 || falseVotes.length > 10) && (
+          <button
+            className="underline text-white font-medium py-2 px-4 rounded-lg transition duration-300 shadow-lg"
+            onClick={() => setShowAllVotes(!showAllVotes)}
+          >
+            {showAllVotes ? "Prikaži manje" : "Prikaži sve glasove"}
+          </button>
+        )}
       </div>
     </div>
   );

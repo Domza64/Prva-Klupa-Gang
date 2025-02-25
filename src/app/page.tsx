@@ -1,5 +1,6 @@
 import GlasanjeForma from "@/components/GlasanjeForma";
 import VotesContainer from "@/components/VotesContainer";
+import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -43,8 +44,19 @@ export default function Home() {
         </section>
       </main>
       <footer className="bg-slate-950 w-full h-20 flex items-center justify-center text-gray-400 text-sm">
-        &copy; 2024 - {new Date().getFullYear()} Prva Klupa Gang. Sva prava
-        pridržana (osim zadnjoj klupi).
+        <p>
+          &copy; 2024 - {new Date().getFullYear()} Prva Klupa Gang. Sva prava
+          pridržana (osim zadnjoj klupi).
+        </p>
+        <span className="mx-3">|</span>
+        <a
+          href="https://github.com/Domza64/Prva-Klupa-Gang"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center text-gray-400 hover:text-white"
+        >
+          <FaGithub className="mr-2" /> GitHub Repo
+        </a>
       </footer>
     </>
   );
