@@ -30,8 +30,10 @@ export default function VotesContainer() {
     return <div className="mt-6">Učitavanje glasova...</div>;
   }
 
-  const trueVotes = votes.filter((item) => item.prva_klupa === true);
-  const falseVotes = votes.filter((item) => item.prva_klupa === false);
+  const trueVotes = votes.filter((item) => item.prva_klupa === true).reverse();
+  const falseVotes = votes
+    .filter((item) => item.prva_klupa === false)
+    .reverse();
 
   // Calculate the ratio of true vs false votes
   const totalVotes = votes.length;
