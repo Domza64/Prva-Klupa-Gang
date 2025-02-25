@@ -73,9 +73,14 @@ export default function VotesContainer() {
             {displayedTrueVotes.map((item) => (
               <li
                 key={item.id}
-                className="mb-2 bg-gray-700 p-2 rounded-md shadow-md"
+                className="mb-2 bg-gray-700 p-2 rounded-md flex justify-between shadow-md"
               >
-                {item.username}
+                <span>{item.username}</span>
+                <span className="text-sm text-gray-400 text-right">
+                  {item.created_at.toDateString()}
+                  <br />
+                  {item.created_at.toLocaleTimeString()}
+                </span>
               </li>
             ))}
           </ul>
@@ -86,9 +91,14 @@ export default function VotesContainer() {
             {displayedFalseVotes.map((item) => (
               <li
                 key={item.id}
-                className="mb-2 bg-gray-700 p-2 rounded-md shadow-md"
+                className="mb-2 bg-gray-700 p-2 rounded-md flex justify-between shadow-md"
               >
-                {item.username}
+                <span>{item.username}</span>
+                <span className="text-sm text-gray-400 text-right">
+                  {item.created_at.toDateString()}
+                  <br />
+                  {item.created_at.toLocaleTimeString()}
+                </span>
               </li>
             ))}
           </ul>
